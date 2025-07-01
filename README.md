@@ -1,4 +1,4 @@
-# Full Stack Data Science with Generative & Agentic AI –       6-Month Journey
+# Full Stack Data Science with Generative & Agentic AI – 6-Month Journey
 
 Welcome to my repository for the **Full Stack Data Science (FSDS) with Generative AI & Agentic AI** course. This repository tracks my daily progress, exercises, mini-projects, and capstone work over a period of 6 months.
 
@@ -6,8 +6,6 @@ Welcome to my repository for the **Full Stack Data Science (FSDS) with Generativ
 
 ## Course Duration
 **June 2025 – December 2025**  
-
----
 
 ---
 
