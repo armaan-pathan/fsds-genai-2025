@@ -1,0 +1,695 @@
+mysql> create database newdb;
+
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| newdb              |
+| performance_schema |
+| sys                |
++--------------------+
+5 rows in set (0.04 sec)
+
+----
+
+mysql> use newdb;
+Database changed
+
+## create student table with column ( name, id is not null and also ID will be the primary key, address, marks) – for describe the table use desc
+
+mysql> create table student ( name varchar(30), id int not null primary key, address varchar (50), marks int);
+
+mysql> show tables;
++-----------------+
+| Tables_in_newdb |
++-----------------+
+| student         |
++-----------------+
+1 row in set (0.08 sec)
+
+---
+
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| name    | varchar(30) | YES  |     | NULL    |       |
+| id      | int         | NO   | PRI | NULL    |       |
+| address | varchar(50) | YES  |     | NULL    |       |
+| marks   | int         | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.07 sec)
+
+---
+
+## Once table created then we need insert the value to the table 2 way – secure way & insecure way
+## 1st query is secure way & 2nd query is insecure way (INSERT QUERY)
+
+mysql> insert into student values('Jake',15,'Hyd',70);
+Query OK, 1 row affected (0.07 sec)
+
+---
+## User can also insert multiple value in direct way 
+
+mysql> insert into student values ('Alex',18,'Delhi',75), ('Raj',20,'Mum',79), ('Phil',25,'Hyd',60), ('Rose',30,'Delhi',65);
+Query OK, 4 rows affected (0.07 sec)
+
+---
+
+## Data stored inside the table & you wanted to see the table then we will use (SELECT QUERY)
+
+mysql> select *from student;
++---------+----+---------+-------+
+| name    | id | address | marks |
++---------+----+---------+-------+
+| Charlie | 10 | Mum     |    80 |
+| Jake    | 15 | Hyd     |    70 |
+| Alex    | 18 | Delhi   |    75 |
+| Raj     | 20 | Mum     |    79 |
+| Phil    | 25 | Hyd     |    60 |
+| Rose    | 30 | Delhi   |    65 |
++---------+----+---------+-------+
+6 rows in set (0.00 sec)
+
+---
+
+mysql> select name from student;
++---------+
+| name    |
++---------+
+| Charlie |
+| Jake    |
+| Alex    |
+| Raj     |
+| Phil    |
+| Rose    |
++---------+
+6 rows in set (0.00 sec)
+
+---
+
+mysql> select name,id from student;
++---------+----+
+| name    | id |
++---------+----+
+| Charlie | 10 |
+| Jake    | 15 |
+| Alex    | 18 |
+| Raj     | 20 |
+| Phil    | 25 |
+| Rose    | 30 |
++---------+----+
+6 rows in set (0.00 sec)
+
+---
+
+## User need to see the record WHERE id =12 & 3 type of select statement 
+## Select the entire table || select the column || select the raw by condition or WHERE clause
+
+
+mysql> select *from student where id=15;
++------+----+---------+-------+
+| name | id | address | marks |
++------+----+---------+-------+
+| Jake | 15 | Hyd     |    70 |
++------+----+---------+-------+
+1 row in set (0.06 sec)
+
+---
+
+mysql> select *from student;
++---------+----+---------+-------+
+| name    | id | address | marks |
++---------+----+---------+-------+
+| Charlie | 10 | Mum     |    80 |
+| Jake    | 15 | Hyd     |    70 |
+| Alex    | 18 | Delhi   |    75 |
+| Raj     | 20 | Mum     |    79 |
+| Phil    | 25 | Hyd     |    60 |
+| Rose    | 30 | Delhi   |    65 |
++---------+----+---------+-------+
+6 rows in set (0.00 sec)
+
+---
+
+## Once you make ID as primary key you can’t insert any value & it will be always unique. ID column never duplicate because we make id as primary key
+
+mysql> insert into student values ('Sam',15,'Hyd',55);
+ERROR 1062 (23000): Duplicate entry '15' for key 'student.PRIMARY'
+
+## User want to update wherever you find address as Mumbai want to modify Chennai then (UPDATE)
+
+mysql> update student set address='Chennai' where id = 25;
+Query OK, 1 row affected (0.07 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+---
+
+mysql> select *from student;
++---------+----+---------+-------+
+| name    | id | address | marks |
++---------+----+---------+-------+
+| Charlie | 10 | Mum     |    80 |
+| Jake    | 15 | Hyd     |    70 |
+| Alex    | 18 | Delhi   |    75 |
+| Raj     | 20 | Mum     |    79 |
+| Phil    | 25 | Chennai |    60 |
+| Rose    | 30 | Delhi   |    65 |
++---------+----+---------+-------+
+6 rows in set (0.00 sec)
+
+---
+
+## If user want to add any column in existing table  (ALTER) but everything is added with null
+
+mysql> alter table student add phoneNo int;
+Query OK, 0 rows affected (0.11 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select *from student;
++---------+----+---------+-------+---------+
+| name    | id | address | marks | phoneNo |
++---------+----+---------+-------+---------+
+| Charlie | 10 | Mum     |    80 |    NULL |
+| Jake    | 15 | Hyd     |    70 |    NULL |
+| Alex    | 18 | Delhi   |    75 |    NULL |
+| Raj     | 20 | Mum     |    79 |    NULL |
+| Phil    | 25 | Chennai |    60 |    NULL |
+| Rose    | 30 | Delhi   |    65 |    NULL |
++---------+----+---------+-------+---------+
+6 rows in set (0.00 sec)
+
+---
+
+mysql> update student set phoneNo=123;
+Query OK, 6 rows affected (0.01 sec)
+Rows matched: 6  Changed: 6  Warnings: 0
+
+mysql> select *from student;
++---------+----+---------+-------+---------+
+| name    | id | address | marks | phoneNo |
++---------+----+---------+-------+---------+
+| Charlie | 10 | Mum     |    80 |     123 |
+| Jake    | 15 | Hyd     |    70 |     123 |
+| Alex    | 18 | Delhi   |    75 |     123 |
+| Raj     | 20 | Mum     |    79 |     123 |
+| Phil    | 25 | Chennai |    60 |     123 |
+| Rose    | 30 | Delhi   |    65 |     123 |
++---------+----+---------+-------+---------+
+6 rows in set (0.00 sec)
+
+---
+
+## User want to change specific phoneNo then you need to write the condition
+
+mysql> update student set phoneNo=456 where id=25;
+Query OK, 1 row affected (0.07 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> select *from student;
++---------+----+---------+-------+---------+
+| name    | id | address | marks | phoneNo |
++---------+----+---------+-------+---------+
+| Charlie | 10 | Mum     |    80 |     123 |
+| Jake    | 15 | Hyd     |    70 |     123 |
+| Alex    | 18 | Delhi   |    75 |     123 |
+| Raj     | 20 | Mum     |    79 |     123 |
+| Phil    | 25 | Chennai |    60 |     456 |
+| Rose    | 30 | Delhi   |    65 |     123 |
++---------+----+---------+-------+---------+
+6 rows in set (0.00 sec)
+
+---
+
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| name    | varchar(30) | YES  |     | NULL    |       |
+| id      | int         | NO   | PRI | NULL    |       |
+| address | varchar(50) | YES  |     | NULL    |       |
+| marks   | int         | YES  |     | NULL    |       |
+| phoneNo | int         | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+5 rows in set (0.01 sec)
+
+## Want to change the column type –
+
+mysql> alter table student modify column name varchar(60);
+Query OK, 0 rows affected (0.03 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+---
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| name    | varchar(60) | YES  |     | NULL    |       |
+| id      | int         | NO   | PRI | NULL    |       |
+| address | varchar(50) | YES  |     | NULL    |       |
+| marks   | int         | YES  |     | NULL    |       |
+| phoneNo | int         | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+---
+
+## User can drop the column name from the table as well
+
+mysql> alter table student drop column phoneNo;
+Query OK, 0 rows affected (0.02 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc student;
++---------+-------------+------+-----+---------+-------+
+| Field   | Type        | Null | Key | Default | Extra |
++---------+-------------+------+-----+---------+-------+
+| name    | varchar(60) | YES  |     | NULL    |       |
+| id      | int         | NO   | PRI | NULL    |       |
+| address | varchar(50) | YES  |     | NULL    |       |
+| marks   | int         | YES  |     | NULL    |       |
++---------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+
+---
+
+mysql> select *from student;
++---------+----+---------+-------+
+| name    | id | address | marks |
++---------+----+---------+-------+
+| Charlie | 10 | Mum     |    80 |
+| Jake    | 15 | Hyd     |    70 |
+| Alex    | 18 | Delhi   |    75 |
+| Raj     | 20 | Mum     |    79 |
+| Phil    | 25 | Chennai |    60 |
+| Rose    | 30 | Delhi   |    65 |
++---------+----+---------+-------+
+6 rows in set (0.00 sec)
+
+---
+
+mysql> delete from student where name='Alex';
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select *from student;
++---------+----+---------+-------+
+| name    | id | address | marks |
++---------+----+---------+-------+
+| Charlie | 10 | Mum     |    80 |
+| Jake    | 15 | Hyd     |    70 |
+| Raj     | 20 | Mum     |    79 |
+| Phil    | 25 | Chennai |    60 |
+| Rose    | 30 | Delhi   |    65 |
++---------+----+---------+-------+
+5 rows in set (0.00 sec)
+
+---
+
+---
+## Wildcard Functions
+
+mysql> select *from student where name like 'r%';
++------+----+---------+-------+
+| name | id | address | marks |
++------+----+---------+-------+
+| Raj  | 20 | Mum     |    79 |
+| Rose | 30 | Delhi   |    65 |
++------+----+---------+-------+
+2 rows in set (0.00 sec)
+
+mysql> select *from student where name like 'c%';
++---------+----+---------+-------+
+| name    | id | address | marks |
++---------+----+---------+-------+
+| Charlie | 10 | Mum     |    80 |
++---------+----+---------+-------+
+1 row in set (0.00 sec)
+
+---
+
+mysql> select *from student where name like '%e';
++---------+----+---------+-------+
+| name    | id | address | marks |
++---------+----+---------+-------+
+| Charlie | 10 | Mum     |    80 |
+| Jake    | 15 | Hyd     |    70 |
+| Rose    | 30 | Delhi   |    65 |
++---------+----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> select *from student where name like '_a%';
++------+----+---------+-------+
+| name | id | address | marks |
++------+----+---------+-------+
+| Jake | 15 | Hyd     |    70 |
+| Raj  | 20 | Mum     |    79 |
++------+----+---------+-------+
+2 rows in set (0.00 sec)
+
+---
+
+mysql> select *from student where name like '%i_';
++---------+----+---------+-------+
+| name    | id | address | marks |
++---------+----+---------+-------+
+| Charlie | 10 | Mum     |    80 |
+| Phil    | 25 | Chennai |    60 |
++---------+----+---------+-------+
+2 rows in set (0.00 sec)
+
+---
+## Wildcard Completed
+---
+
+
+mysql> select *from student order by marks;
++---------+----+---------+-------+
+| name    | id | address | marks |
++---------+----+---------+-------+
+| Phil    | 25 | Chennai |    60 |
+| Rose    | 30 | Delhi   |    65 |
+| Jake    | 15 | Hyd     |    70 |
+| Raj     | 20 | Mum     |    79 |
+| Charlie | 10 | Mum     |    80 |
++---------+----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> select *from student order by marks desc;
++---------+----+---------+-------+
+| name    | id | address | marks |
++---------+----+---------+-------+
+| Charlie | 10 | Mum     |    80 |
+| Raj     | 20 | Mum     |    79 |
+| Jake    | 15 | Hyd     |    70 |
+| Rose    | 30 | Delhi   |    65 |
+| Phil    | 25 | Chennai |    60 |
++---------+----+---------+-------+
+5 rows in set (0.00 sec)
+
+--- 
+
+mysql> SELECT DISTINCT address FROM student;
++---------+
+| address |
++---------+
+| Mum     |
+| Hyd     |
+| Chennai |
+| Delhi   |
++---------+
+4 rows in set (0.04 sec)
+
+---
+
+mysql> select * from student where marks between 65 and 80;
++---------+----+---------+-------+
+| name    | id | address | marks |
++---------+----+---------+-------+
+| Charlie | 10 | Mum     |    80 |
+| Jake    | 15 | Hyd     |    70 |
+| Raj     | 20 | Mum     |    79 |
+| Rose    | 30 | Delhi   |    65 |
++---------+----+---------+-------+
+4 rows in set (0.00 sec)
+
+---
+
+mysql> select * from student where address IN ('Delhi','Hyd');
++------+----+---------+-------+
+| name | id | address | marks |
++------+----+---------+-------+
+| Jake | 15 | Hyd     |    70 |
+| Rose | 30 | Delhi   |    65 |
++------+----+---------+-------+
+2 rows in set (0.00 sec)
+
+---
+
+mysql> select * from student where address not in ('Delhi','Hyd');
++---------+----+---------+-------+
+| name    | id | address | marks |
++---------+----+---------+-------+
+| Charlie | 10 | Mum     |    80 |
+| Raj     | 20 | Mum     |    79 |
+| Phil    | 25 | Chennai |    60 |
++---------+----+---------+-------+
+3 rows in set (0.00 sec)
+
+---
+
+mysql> select * from student order by marks desc limit 3;
++---------+----+---------+-------+
+| name    | id | address | marks |
++---------+----+---------+-------+
+| Charlie | 10 | Mum     |    80 |
+| Raj     | 20 | Mum     |    79 |
+| Jake    | 15 | Hyd     |    70 |
++---------+----+---------+-------+
+3 rows in set (0.00 sec)
+
+---
+
+
+## Some sql functions
+
+mysql> select sum(marks) from student;
++------------+
+| sum(marks) |
++------------+
+|        354 |
++------------+
+1 row in set (0.01 sec)
+
+mysql> select avg(marks) from student;
++------------+
+| avg(marks) |
++------------+
+|    70.8000 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> select count(name) from student;
++-------------+
+| count(name) |
++-------------+
+|           5 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql> select max(marks) from student;
++------------+
+| max(marks) |
++------------+
+|         80 |
++------------+
+1 row in set (0.00 sec)
+
+mysql> select min(marks) from student;
++------------+
+| min(marks) |
++------------+
+|         60 |
++------------+
+1 row in set (0.00 sec)
+
+---
+
+## SQL Aggregate Functions completed
+
+---
+
+mysql> SELECT address, SUM(marks) AS total_marks FROM student GROUP BY address;
++---------+-------------+
+| address | total_marks |
++---------+-------------+
+| Mum     |         159 |
+| Hyd     |          70 |
+| Chennai |          60 |
+| Delhi   |          65 |
++---------+-------------+
+4 rows in set (0.01 sec)
+
+---
+
+mysql> SELECT address, AVG(marks) AS avg_marks FROM student GROUP BY address;
++---------+-----------+
+| address | avg_marks |
++---------+-----------+
+| Mum     |   79.5000 |
+| Hyd     |   70.0000 |
+| Chennai |   60.0000 |
+| Delhi   |   65.0000 |
++---------+-----------+
+4 rows in set (0.00 sec)
+
+---
+
+mysql> SELECT address, AVG(marks) AS avg_marks FROM student GROUP BY address HAVING AVG(marks) > 70;
++---------+-----------+
+| address | avg_marks |
++---------+-----------+
+| Mum     |   79.5000 |
++---------+-----------+
+1 row in set (0.00 sec)
+
+---
+
+
+## Create another table to make joins
+
+mysql> create table emp(id int not null primary key, salary int, empcode int, name varchar(30));
+Query OK, 0 rows affected (0.07 sec)
+
+mysql> insert into emp values(10, 20000, 102,'aman'), (23, 60000,104,'arup'),(30,30000,105,'max'),(40,25000,103,'ram'),
+    -> (35,90000,106,'sam');
+Query OK, 5 rows affected (0.01 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+---
+
+mysql> select *from emp;
++----+--------+---------+------+
+| id | salary | empcode | name |
++----+--------+---------+------+
+| 10 |  20000 |     102 | aman |
+| 23 |  60000 |     104 | arup |
+| 30 |  30000 |     105 | max  |
+| 35 |  90000 |     106 | sam  |
+| 40 |  25000 |     103 | ram  |
++----+--------+---------+------+
+5 rows in set (0.00 sec)
+
+---
+
+## Now the two tables are:
+
+mysql> select *from student;
++---------+----+---------+-------+
+| name    | id | address | marks |
++---------+----+---------+-------+
+| Charlie | 10 | Mum     |    80 |
+| Jake    | 15 | Hyd     |    70 |
+| Raj     | 20 | Mum     |    79 |
+| Phil    | 25 | Chennai |    60 |
+| Rose    | 30 | Delhi   |    65 |
++---------+----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> select *from emp;
++----+--------+---------+------+
+| id | salary | empcode | name |
++----+--------+---------+------+
+| 10 |  20000 |     102 | aman |
+| 23 |  60000 |     104 | arup |
+| 30 |  30000 |     105 | max  |
+| 35 |  90000 |     106 | sam  |
+| 40 |  25000 |     103 | ram  |
++----+--------+---------+------+
+5 rows in set (0.00 sec)
+
+---
+
+## Inner join
+mysql> select * from student inner join emp on student.id=emp.id;
++---------+----+---------+-------+----+--------+---------+------+
+| name    | id | address | marks | id | salary | empcode | name |
++---------+----+---------+-------+----+--------+---------+------+
+| Charlie | 10 | Mum     |    80 | 10 |  20000 |     102 | aman |
+| Rose    | 30 | Delhi   |    65 | 30 |  30000 |     105 | max  |
++---------+----+---------+-------+----+--------+---------+------+
+2 rows in set (0.00 sec)
+
+mysql> select * from emp inner join student on emp.id=student.id;
++----+--------+---------+------+---------+----+---------+-------+
+| id | salary | empcode | name | name    | id | address | marks |
++----+--------+---------+------+---------+----+---------+-------+
+| 10 |  20000 |     102 | aman | Charlie | 10 | Mum     |    80 |
+| 30 |  30000 |     105 | max  | Rose    | 30 | Delhi   |    65 |
++----+--------+---------+------+---------+----+---------+-------+
+2 rows in set (0.00 sec)
+
+---
+
+## Left join
+
+mysql> select *from student left join emp on student.id=emp.id;
++---------+----+---------+-------+------+--------+---------+------+
+| name    | id | address | marks | id   | salary | empcode | name |
++---------+----+---------+-------+------+--------+---------+------+
+| Charlie | 10 | Mum     |    80 |   10 |  20000 |     102 | aman |
+| Jake    | 15 | Hyd     |    70 | NULL |   NULL |    NULL | NULL |
+| Raj     | 20 | Mum     |    79 | NULL |   NULL |    NULL | NULL |
+| Phil    | 25 | Chennai |    60 | NULL |   NULL |    NULL | NULL |
+| Rose    | 30 | Delhi   |    65 |   30 |  30000 |     105 | max  |
++---------+----+---------+-------+------+--------+---------+------+
+5 rows in set (0.00 sec)
+
+mysql> select *from emp left join student on emp.id=student.id;
++----+--------+---------+------+---------+------+---------+-------+
+| id | salary | empcode | name | name    | id   | address | marks |
++----+--------+---------+------+---------+------+---------+-------+
+| 10 |  20000 |     102 | aman | Charlie |   10 | Mum     |    80 |
+| 23 |  60000 |     104 | arup | NULL    | NULL | NULL    |  NULL |
+| 30 |  30000 |     105 | max  | Rose    |   30 | Delhi   |    65 |
+| 35 |  90000 |     106 | sam  | NULL    | NULL | NULL    |  NULL |
+| 40 |  25000 |     103 | ram  | NULL    | NULL | NULL    |  NULL |
++----+--------+---------+------+---------+------+---------+-------+
+5 rows in set (0.00 sec)
+
+---
+
+## Right join
+
+mysql> select * from student right join emp on student.id=emp.id;
++---------+------+---------+-------+----+--------+---------+------+
+| name    | id   | address | marks | id | salary | empcode | name |
++---------+------+---------+-------+----+--------+---------+------+
+| Charlie |   10 | Mum     |    80 | 10 |  20000 |     102 | aman |
+| NULL    | NULL | NULL    |  NULL | 23 |  60000 |     104 | arup |
+| Rose    |   30 | Delhi   |    65 | 30 |  30000 |     105 | max  |
+| NULL    | NULL | NULL    |  NULL | 35 |  90000 |     106 | sam  |
+| NULL    | NULL | NULL    |  NULL | 40 |  25000 |     103 | ram  |
++---------+------+---------+-------+----+--------+---------+------+
+5 rows in set (0.00 sec)
+
+---
+
+## Cross Join
+
+mysql> select *from student cross join emp;
++---------+----+---------+-------+----+--------+---------+------+
+| name    | id | address | marks | id | salary | empcode | name |
++---------+----+---------+-------+----+--------+---------+------+
+| Rose    | 30 | Delhi   |    65 | 10 |  20000 |     102 | aman |
+| Phil    | 25 | Chennai |    60 | 10 |  20000 |     102 | aman |
+| Raj     | 20 | Mum     |    79 | 10 |  20000 |     102 | aman |
+| Jake    | 15 | Hyd     |    70 | 10 |  20000 |     102 | aman |
+| Charlie | 10 | Mum     |    80 | 10 |  20000 |     102 | aman |
+| Rose    | 30 | Delhi   |    65 | 23 |  60000 |     104 | arup |
+| Phil    | 25 | Chennai |    60 | 23 |  60000 |     104 | arup |
+| Raj     | 20 | Mum     |    79 | 23 |  60000 |     104 | arup |
+| Jake    | 15 | Hyd     |    70 | 23 |  60000 |     104 | arup |
+| Charlie | 10 | Mum     |    80 | 23 |  60000 |     104 | arup |
+| Rose    | 30 | Delhi   |    65 | 30 |  30000 |     105 | max  |
+| Phil    | 25 | Chennai |    60 | 30 |  30000 |     105 | max  |
+| Raj     | 20 | Mum     |    79 | 30 |  30000 |     105 | max  |
+| Jake    | 15 | Hyd     |    70 | 30 |  30000 |     105 | max  |
+| Charlie | 10 | Mum     |    80 | 30 |  30000 |     105 | max  |
+| Rose    | 30 | Delhi   |    65 | 35 |  90000 |     106 | sam  |
+| Phil    | 25 | Chennai |    60 | 35 |  90000 |     106 | sam  |
+| Raj     | 20 | Mum     |    79 | 35 |  90000 |     106 | sam  |
+| Jake    | 15 | Hyd     |    70 | 35 |  90000 |     106 | sam  |
+| Charlie | 10 | Mum     |    80 | 35 |  90000 |     106 | sam  |
+| Rose    | 30 | Delhi   |    65 | 40 |  25000 |     103 | ram  |
+| Phil    | 25 | Chennai |    60 | 40 |  25000 |     103 | ram  |
+| Raj     | 20 | Mum     |    79 | 40 |  25000 |     103 | ram  |
+| Jake    | 15 | Hyd     |    70 | 40 |  25000 |     103 | ram  |
+| Charlie | 10 | Mum     |    80 | 40 |  25000 |     103 | ram  |
++---------+----+---------+-------+----+--------+---------+------+
+25 rows in set (0.00 sec)
+
+---
