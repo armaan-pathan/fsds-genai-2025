@@ -49,13 +49,6 @@ NumPy introduces the **ndarray (N-dimensional array)**, which allows fast, memor
 
 ---
 
-## How to Run
-1. Open the `.ipynb` files in **Jupyter Notebook** or **JupyterLab**.
-2. Run each cell to see examples and outputs.
-3. Modify the code for practice and experimentation.
-
----
-
 ## Why NumPy?
 - Foundation for libraries like **Pandas, SciPy, TensorFlow, PyTorch**.  
 - Used in **Data Science, Machine Learning, Deep Learning, Image Processing**.  
