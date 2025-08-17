@@ -1,11 +1,12 @@
 # Python Basics
 
-This folder contains my 11-day learning journey of Python fundamentals.  
+This folder contains my day-wise learning of Python fundamentals.  
 It covers everything from basic syntax to essential built-in data structures, operators, modules, and user input handling — forming a strong foundation for Data Science, Generative AI, and Agentic AI.
+The journey covers essential topics step by step, starting from installation to working with data structures.
 
 ---
 
-## 📂 Contents
+## Contents
 
 ### **Day 1 – Python Basics**
 - Introduction to Python syntax.
@@ -88,16 +89,7 @@ It covers everything from basic syntax to essential built-in data structures, op
 - Type conversion from string to int/float.
 
 ---
-
-## 🛠 How to Use
-1. Open `.ipynb` files in **Jupyter Notebook** or **JupyterLab**.
-2. Run cells to see examples and outputs.
-3. Modify examples to practice.
-
----
-
-## 📌 Notes
-Completing these 11 days gave me a **solid foundation in Python**, which will be reused in future topics like:
-- Data science libraries (`pandas`, `numpy`, etc.)
-- Generative AI workflows
-- Agentic AI applications
+## Resources
+- [Python Official Documentation](https://docs.python.org/3/)  
+- [W3Schools Python Tutorial](https://www.w3schools.com/python/)  
+- [GeeksforGeeks Python Basics](https://www.geeksforgeeks.org/python-programming-language/)  
