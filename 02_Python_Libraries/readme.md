@@ -12,7 +12,7 @@ The libraries covered so far are:
 
 ## Contents
 
-### 1. [NumPy]((NumPy)
+### 1. [NumPy](NumPy)
 - Learned array creation, attributes, indexing, slicing, and mathematical operations.  
 - Explored statistical functions, reshaping, stacking, and broadcasting.  
 - **Mini Project:** Converted an image into a pixel array to understand how digital images are stored as matrices.  
