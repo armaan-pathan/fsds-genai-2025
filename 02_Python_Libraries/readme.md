@@ -10,37 +10,44 @@ The libraries covered so far are:
 
 ---
 
-## Folder Structure (Visual TOC)
+## Folder Structure 
 
 02_Python_Libraries/
 │
+
 ├── NumPy
-│ ├── Day12_Numpy1.ipynb
-│ ├── Day13_Numpy2.ipynb
-│ ├── Day14_NumpyRevision.ipynb
-│ └── Day16_Image_To_Array.ipynb
+│ 
+├── Day12_Numpy1.ipynb
+│ 
+├── Day13_Numpy2.ipynb
+│ 
+├── Day14_NumpyRevision.ipynb
+│ 
+└── Day16_Image_To_Array.ipynb
 │
 ├── Matplotlib
-│ ├── Day15_Matplotlib.ipynb
-│ └── Day15_Matplotlib_Using_IPLDataAnalysis.ipynb
+│ 
+├── Day15_Matplotlib.ipynb
+│ 
+└── Day15_Matplotlib_Using_IPLDataAnalysis.ipynb
 │
 └── Pandas
-├── Day17&18_Introduction_To_Pandas_With_GDP_Dataset.ipynb
+├──Day17&18_Introduction_To_Pandas_With_GDP_Dataset.ipynb
 └── Day19_MovieLens_Data_Analysis_with_Pandas.ipynb
 
 ## Contents
 
-### 1. [NumPy](./NumPy)
+### 1. [NumPy]
 - Learned array creation, attributes, indexing, slicing, and mathematical operations.  
 - Explored statistical functions, reshaping, stacking, and broadcasting.  
 - **Mini Project:** Converted an image into a pixel array to understand how digital images are stored as matrices.  
 
-### 2. [Matplotlib](./Matplotlib)
+### 2. [Matplotlib]
 - Practiced creating line plots, bar charts, histograms, scatter plots, and pie charts.  
 - Customized plots with labels, titles, legends, colors, and gridlines.  
 - **Mini Project:** Analyzed IPL cricket data using bar and pie charts to visualize team and player performance.  
 
-### 3. [Pandas](./Pandas)
+### 3. [Pandas]
 - Learned how to work with **Series** and **DataFrames**.  
 - Covered importing, exploring, cleaning, filtering, and aggregating datasets.  
 - **Mini Analysis (GDP Dataset):** Explored relationships between internet usage, birth rates, and income groups with Seaborn visualizations.  
