@@ -1,8 +1,6 @@
 # Python Basics
 
-This folder contains my day-wise learning of Python fundamentals.  
-It covers everything from basic syntax to essential built-in data structures, operators, modules, and user input handling — forming a strong foundation for Data Science, Generative AI, and Agentic AI.
-The journey covers essential topics step by step, starting from installation to working with data structures.
+This folder covers the fundamentals of Python. It covers everything from basic syntax to essential built-in data structures, operators, modules, and user input handling. It is structured day-wise for progressive learning.
 
 ---
 
