@@ -12,17 +12,17 @@ The libraries covered so far are:
 
 ## Contents
 
-### 1. [NumPy](.02_Python_Libraries/Numpy)
+### 1. [NumPy]((NumPy)
 - Learned array creation, attributes, indexing, slicing, and mathematical operations.  
 - Explored statistical functions, reshaping, stacking, and broadcasting.  
 - **Mini Project:** Converted an image into a pixel array to understand how digital images are stored as matrices.  
 
-### 2. [Matplotlib](.02_Python_Libraries/Matplotlib)
+### 2. [Matplotlib](Matplotlib)
 - Practiced creating line plots, bar charts, histograms, scatter plots, and pie charts.  
 - Customized plots with labels, titles, legends, colors, and gridlines.  
 - **Mini Project:** Analyzed IPL cricket data using bar and pie charts to visualize team and player performance.  
 
-### 3. [Pandas](.02_Python_Libraries/Pandas)
+### 3. [Pandas](Pandas)
 - Learned how to work with **Series** and **DataFrames**.  
 - Covered importing, exploring, cleaning, filtering, and aggregating datasets.  
 - **Mini Analysis (GDP Dataset):** Explored relationships between internet usage, birth rates, and income groups with Seaborn visualizations.  
