@@ -1,6 +1,6 @@
 # Python Basics
 
-This folder covers the fundamentals of Python. It covers everything from basic syntax to essential built-in data structures, operators, modules, and user input handling. It is structured day-wise for progressive learning.
+This folder covers the fundamentals of Python, starting from basic syntax to essential built-in data structures, operators, modules, and user input handling. It is structured day-wise for progressive learning.
 
 ---
 
