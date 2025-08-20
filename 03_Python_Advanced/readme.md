@@ -4,7 +4,7 @@ This section explores more advanced Python programming concepts that go beyond t
 It covers **control statements, loops, and functions**, which are the backbone of building logic and reusable programs.
 
 ## Subfolders
-1. [Conditional Statements](01_Conditional_Statements)  
+1. [Conditional Statements](01_Control_Statements)  
    Learn how to use `if`, `if-else`, `if-elif-else`, and logical operators for decision-making.
 
 2. [Loops](02_Loops)  
