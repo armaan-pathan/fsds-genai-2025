@@ -38,6 +38,17 @@ The goal was to uncover trends, patterns, and user behavior through data explora
 
 ---
 
+## Dataset
+- Source: MovieLens dataset.
+- Contains user ratings for movies.
+- Key columns:
+  - `userId`: Unique identifier for users
+  - `movieId`: Unique identifier for movies
+  - `rating`: Rating given (1–5 scale)
+  - `timestamp`: When the rating was given
+
+---
+
 ## Key Insights
 - Most ratings fall within a **middle range** (3–4 stars).  
 - Some movies receive significantly more ratings, showing **popularity bias**.  
