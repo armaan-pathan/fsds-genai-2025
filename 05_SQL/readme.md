@@ -27,7 +27,7 @@ SQL is an essential tool for data analysis, data engineering, and database manag
 ---
 
 ### **Day 31 – SQL Practical**
-- Practiced writing SQL queries and commands for working with relational databases:
+Practiced writing SQL queries and commands for working with relational databases:
 **Key SQL Concepts Practiced:**
 1. **Database Management** → `CREATE DATABASE`, `USE`, `SHOW DATABASES`.
 2. **Table Creation & Constraints** → Primary Key, Not Null.
@@ -40,11 +40,10 @@ SQL is an essential tool for data analysis, data engineering, and database manag
 9. **Aggregate Functions** → `SUM()`, `AVG()`, `COUNT()`, `MAX()`, `MIN()`.
 10. **Grouping & Filtering** → `GROUP BY`, `HAVING`.
 11. **Joins**:
-
-* **INNER JOIN** – Common rows from both tables.
-* **LEFT JOIN** – All rows from left + matching from right.
-* **RIGHT JOIN** – All rows from right + matching from left.
-* **CROSS JOIN** – Cartesian product of both tables.
+      * **INNER JOIN** – Common rows from both tables.
+      * **LEFT JOIN** – All rows from left + matching from right.
+      * **RIGHT JOIN** – All rows from right + matching from left.
+      * **CROSS JOIN** – Cartesian product of both tables.
 
 ---
 
