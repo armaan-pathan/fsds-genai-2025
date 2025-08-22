@@ -28,22 +28,22 @@ SQL is an essential tool for data analysis, data engineering, and database manag
 
 ### **Day 31 – SQL Practical**
 - Practiced writing SQL queries and commands for working with relational databases:
-**Key SQL Concepts Practiced:**
-1. **Database Management** → `CREATE DATABASE`, `USE`, `SHOW DATABASES`.
-2. **Table Creation & Constraints** → Primary Key, Not Null.
-3. **Insert Data** → Single row & multiple row insertion.
-4. **Select Queries** → Fetch all columns or specific columns.
-5. **Filtering with WHERE** → Targeted record retrieval.
-6. **Update & Delete Records** → Modifying data safely.
-7. **Alter Table** → Add, modify, drop columns.
-8. **Sorting & Filtering** → `ORDER BY`, `DISTINCT`, `BETWEEN`, `IN`, `NOT IN`, `LIMIT`.
-9. **Aggregate Functions** → `SUM()`, `AVG()`, `COUNT()`, `MAX()`, `MIN()`.
-10. **Grouping & Filtering** → `GROUP BY`, `HAVING`.
-11. **Joins**:
-      * **INNER JOIN** – Common rows from both tables.
-      * **LEFT JOIN** – All rows from left + matching from right.
-      * **RIGHT JOIN** – All rows from right + matching from left.
-      * **CROSS JOIN** – Cartesian product of both tables.
+  **Key SQL Concepts Practiced:**
+    1. **Database Management** → `CREATE DATABASE`, `USE`, `SHOW DATABASES`.
+    2. **Table Creation & Constraints** → Primary Key, Not Null.
+    3. **Insert Data** → Single row & multiple row insertion.
+    4. **Select Queries** → Fetch all columns or specific columns.
+    5. **Filtering with WHERE** → Targeted record retrieval.
+    6. **Update & Delete Records** → Modifying data safely.
+    7. **Alter Table** → Add, modify, drop columns.
+    8. **Sorting & Filtering** → `ORDER BY`, `DISTINCT`, `BETWEEN`, `IN`, `NOT IN`, `LIMIT`.
+    9. **Aggregate Functions** → `SUM()`, `AVG()`, `COUNT()`, `MAX()`, `MIN()`.
+    10. **Grouping & Filtering** → `GROUP BY`, `HAVING`.
+    11. **Joins**:
+          * **INNER JOIN** – Common rows from both tables.
+          * **LEFT JOIN** – All rows from left + matching from right.
+          * **RIGHT JOIN** – All rows from right + matching from left.
+          * **CROSS JOIN** – Cartesian product of both tables.
 
 ---
 
