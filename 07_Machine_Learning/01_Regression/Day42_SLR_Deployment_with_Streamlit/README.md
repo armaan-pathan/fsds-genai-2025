@@ -3,7 +3,6 @@
 This project demonstrates how to **deploy a trained Simple Linear Regression model** using **Streamlit**.  
 The model was trained on the **Salary_Data dataset** (YearsExperience → Salary) in [Day41 – Simple Linear Regression](../Day41_Simple_Linear_Regression)
 
-).
 
 ---
 
@@ -23,3 +22,15 @@ The model was trained on the **Salary_Data dataset** (YearsExperience → Salary
 
 ---
 
+## How to Run
+1. Clone the repo and navigate to this folder
+   ```bash
+   cd 42_SLR_Deployment_Streamlit
+
+2. Install dependencies
+   ```bash
+    pip install -r requirements.txt
+
+4. Run the app
+   ```bash
+    streamlit run app.py
