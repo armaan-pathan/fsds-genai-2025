@@ -1,7 +1,9 @@
 # Day42 – Simple Linear Regression Deployment with Streamlit
 
 This project demonstrates how to **deploy a trained Simple Linear Regression model** using **Streamlit**.  
-The model was trained on the **Salary_Data dataset** (YearsExperience → Salary) in [Day41](07_Machine_Learning/01_Regression/Day41_Simple_Linear_Regression).
+The model was trained on the **Salary_Data dataset** (YearsExperience → Salary) in [Day41 – Simple Linear Regression](../41_Simple_Linear_Regression)
+
+).
 
 ---
 
