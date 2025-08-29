@@ -42,6 +42,22 @@ Each sub-folder documents one day’s work with **theory, code, and results**.
 - Compared model performance using **R² Score, MSE** and visualized coefficient differences.  
 
 ---
+### [Day46a – Polynomial Regression](Day46a_Polynomial_Regression)
+- Learned about **Polynomial Regression**, an extension of Linear Regression for modeling non-linear relationships.  
+- Trained models with polynomial degrees from **2 to 6**, observing how the curve fits the data.  
+- Understood the trade-off:
+  - Lower degree → underfitting risk.  
+  - Higher degree → better fit but risk of overfitting.  
+- Final model (degree 5) was selected and saved for deployment.  
+
+---
+
+### [Day46b – Polynomial Regression Deployment with Streamlit](Day46b_PR_Deployment_with_Streamlit)
+- Deployed the **Polynomial Regression model** trained on the Employee Salary dataset.  
+- Built a **Streamlit frontend** where users can input an **Employee Level** and get the predicted **Salary**.  
+- Kept the app clean and beginner-friendly with just prediction functionality.  
+- Demonstrated how to save both the `PolynomialFeatures` object and the trained model for reuse.  
+
 
 ## Key Learnings Across Regression
 - Regression helps understand relationships between features and target variables.  
