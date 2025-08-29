@@ -58,6 +58,7 @@ Each sub-folder documents one day’s work with **theory, code, and results**.
 - Kept the app clean and beginner-friendly with just prediction functionality.  
 - Demonstrated how to save both the `PolynomialFeatures` object and the trained model for reuse.  
 
+---
 
 ## Key Learnings Across Regression
 - Regression helps understand relationships between features and target variables.  
