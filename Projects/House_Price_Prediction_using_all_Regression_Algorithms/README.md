@@ -1,4 +1,4 @@
-# House Price Prediction WebApp (Day48)
+# House Price Prediction WebApp 
 
 This project is a **House Price Prediction Web Application** built with **Flask**.
 It uses the **USA Housing dataset** and multiple **regression models** to predict housing prices.
