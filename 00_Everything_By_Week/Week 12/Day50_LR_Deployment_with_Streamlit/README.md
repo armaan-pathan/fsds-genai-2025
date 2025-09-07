@@ -12,8 +12,7 @@ The app allows users to input their **Age** and **Estimated Salary** and predict
 - Prediction results:
   - Will Purchase
   - Will Not Purchase
-- Additional section showing model information (algorithm, features, preprocessing).  
-- Clean UI with footer branding.
+
 
 ## How to Run
 1. Clone this repository and navigate to the project folder.
