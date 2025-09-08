@@ -10,7 +10,7 @@ This section begins with the foundation of classification, covers **Logistic Reg
 ---
 
 ## Contents
-[Day42 – Simple Linear Regression with Streamlit App](Day42_SLR_Deployment_with_Streamlit)
+
 ### [Day49 – Introduction to Classification & Logistic Regression](Day49_Intro_to_Classification_&_Logistic_Regression)
 
 * Theory of **Classification** and its importance.
