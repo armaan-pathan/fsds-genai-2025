@@ -19,7 +19,7 @@ These notebooks are designed to help beginners understand how raw data is transf
 
 ---
 
-### [Day40 – Data Preprocessing in ML](Day40_Data_Preprocessing_in_Machine_Learning)
+### [Day40 – Data Preprocessing in ML](Day40_Data_Preprocessing_in_Machine_Learning.ipynb)
 
 * Why preprocessing is essential.
 * Steps covered:
@@ -32,7 +32,7 @@ These notebooks are designed to help beginners understand how raw data is transf
 
 ---
 
-### [Day45 – Feature Scaling in ML](Day45_Feature_Scaling_in_Machine_Learning)
+### [Day45 – Feature Scaling in ML](Day45_Feature_Scaling_in_Machine_Learning.ipynb)
 
 * Importance of scaling numerical features.
 * Techniques covered:
@@ -44,7 +44,7 @@ These notebooks are designed to help beginners understand how raw data is transf
 
 ---
 
-### [Day51 – Principal Component Analysis (PCA) in ML](Day51_PCA_in_Machine_Learning)
+### [Day51 – Principal Component Analysis (PCA) in ML](Day51_PCA_in_Machine_Learning.ipynb)
 
 * **Dimensionality reduction technique** that transforms high-dimensional data into fewer principal components while retaining most of the variance.
 * Why PCA is useful: reduces redundancy, speeds up computation, and avoids overfitting.
