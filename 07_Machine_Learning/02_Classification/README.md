@@ -66,11 +66,3 @@ Upcoming notebooks in this folder will cover more **classification algorithms** 
 * Decision Trees
 * Random Forest
 * Naive Bayes
-
----
-
-👉 This README introduces beginners to **classification workflows** and makes it easy to navigate through Day49 & Day50 notebooks/projects.
-
----
-
-Do you want me to also include a **mini comparison table** of the experiments from Day49 (like we put in its own README) here inside the Classification README, or should we keep it high-level only?
