@@ -11,7 +11,7 @@ These notebooks are designed to help beginners understand how raw data is transf
 
 ## Contents
 
-### [Day39 – Introduction to Machine Learning](Day39_Introduction_to_Machine_Learning)
+### [Day39 – Introduction to Machine Learning](Day39_Introduction_to_Machine_Learning.ipynb)
 
 * What is Machine Learning?
 * Types of ML: **Supervised, Unsupervised, Reinforcement Learning**.
