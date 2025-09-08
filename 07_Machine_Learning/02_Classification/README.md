@@ -10,8 +10,8 @@ This section begins with the foundation of classification, covers **Logistic Reg
 ---
 
 ## Contents
-
-### Day49 – Introduction to Classification & Logistic Regression
+[Day42 – Simple Linear Regression with Streamlit App](Day42_SLR_Deployment_with_Streamlit)
+### [Day49 – Introduction to Classification & Logistic Regression](Day49_Intro_to_Classification_&_Logistic_Regression)
 
 * Theory of **Classification** and its importance.
 * Difference between **Classification and Regression**.
@@ -24,7 +24,7 @@ This section begins with the foundation of classification, covers **Logistic Reg
 
 ---
 
-### Day50 – Logistic Regression with Unseen Data
+### [Day50 – Logistic Regression with Unseen Data](Day50a_Logistic_Regression_on_Unseen_Data)
 
 * Extended Logistic Regression to predict on **unseen/future data**.
 * Workflow: Train → Save → Load unseen dataset → Preprocess → Predict.
@@ -34,7 +34,7 @@ This section begins with the foundation of classification, covers **Logistic Reg
 
 ---
 
-### Day50 – Logistic Regression Deployment with Streamlit
+### [Day50 – Logistic Regression Deployment with Streamlit](Day50b_LR_Deployment_with_Streamlit)
 
 * Built a **Streamlit web app** for Logistic Regression.
 * User enters **Age** and **Estimated Salary** to predict:
