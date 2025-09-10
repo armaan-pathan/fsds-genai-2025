@@ -9,7 +9,6 @@ The focus was on understanding how KNN works, experimenting with different value
 
 ## Topics Covered
 
-* Introduction to **Classification** and how it differs from Regression.
 * Concept of **K-Nearest Neighbors (KNN)**:
 
   * How it works (step-by-step process).
