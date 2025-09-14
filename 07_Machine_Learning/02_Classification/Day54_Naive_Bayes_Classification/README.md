@@ -38,7 +38,4 @@ On Day 54, I studied the **Naive Bayes Classifier**, a family of probabilistic a
 
 ## Conclusion
 
-Day 54 provided a complete understanding of **Naive Bayes classifiers** — from theory and variants to practical implementation and scaling effects. By the end of this notebook, I could clearly see when to use **Gaussian, Multinomial, or Bernoulli Naive Bayes**, and why preprocessing plays a critical role in their performance.
-
-
-Would you like me to also prepare a **one-liner summary for Day 54** (like your main repo index has for each day) so you can directly paste it into your GitHub root README?
+This day provided a complete understanding of **Naive Bayes classifiers** — from theory and variants to practical implementation and scaling effects. By the end of this notebook, I could clearly see when to use **Gaussian, Multinomial, or Bernoulli Naive Bayes**, and why preprocessing plays a critical role in their performance.
