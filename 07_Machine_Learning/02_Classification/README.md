@@ -46,7 +46,7 @@ This section begins with the foundation of classification, covers **Logistic Reg
 
 ---
 
-### [Day52 – K-Nearest Neighbors (KNN) Classification](Day52_K-Nearest_Neighbors_%28KNN%29_Classification)
+### [Day52 – K-Nearest Neighbors (KNN) Classification](Day52_K-Nearest_Neighbors_(KNN)_Classification)
 
 * Introduction to **KNN Classification**, a distance-based supervised learning algorithm.
 * Explained how KNN works step by step: choosing `k`, calculating distances, finding nearest neighbors, and majority voting.
