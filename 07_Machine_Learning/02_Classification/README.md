@@ -20,7 +20,7 @@ This section begins with the foundation of classification, covers **Logistic Reg
 * Performance metrics: Accuracy, Precision, Recall, F1-score.
 * **Bias–Variance** concept with train/test accuracies.
 * Multiple experiments: without scaling, StandardScaler, Normalizer, and different random states.
-* **Best Accuracy achieved: 0.92** (StandardScaler, random\_state=0, test\_size=0.20).
+* **Best Accuracy achieved: 0.92** (StandardScaler, random_state=0, test_size=0.20).
 
 ---
 
@@ -58,6 +58,49 @@ This section begins with the foundation of classification, covers **Logistic Reg
 
 ---
 
+### [Day53 – Support Vector Machine (SVM) Classification](Day53_Support_Vector_Machine(SVM)_Classification)
+
+* Introduced **Support Vector Machine (SVM)**: an algorithm that finds the optimal hyperplane to separate classes.  
+* Explained concepts of **support vectors, margin, and kernel trick**.  
+* Implemented SVM with different kernels (`linear`, `rbf`).  
+* Compared performance **with and without scaling**, showing that SVM is highly sensitive to feature scaling.  
+* Evaluated results using confusion matrices, ROC curve, and AUC score.  
+* Extended experiments to **future predictions**, applying the trained model on unseen data.  
+
+---
+
+### [Day54 – Naive Bayes Classification](Day54_Naive_Bayes_Classification)
+
+* Covered the theory of **Naive Bayes**:
+  - Conditional probability and Bayes’ Theorem  
+  - Assumption of feature independence  
+  - Real-world use cases (spam filtering, sentiment analysis)  
+  - Types: **GaussianNB**, **MultinomialNB**, **BernoulliNB**  
+* Implemented all three variants under different preprocessing:
+  - Without scaling  
+  - With StandardScaler  
+  - With Normalizer  
+* Observed that:
+  - **GaussianNB** and **BernoulliNB** worked well with/without scaling.  
+  - **MultinomialNB** failed with StandardScaler (since it requires non-negative inputs).  
+* Clear comparison across approaches highlighted how preprocessing impacts performance.  
+
+---
+
+### [Day55 – Decision Tree Classification](Day55_Decision_Tree_Classification)
+
+* Introduced **Decision Tree Classifier**: a model that splits data into branches based on feature thresholds.  
+* Explained concepts of **Entropy, Information Gain, Gini impurity, and Pruning**.  
+* Implemented Decision Trees:
+  - With and without scaling (showing scaling has no effect).  
+  - With `max_depth=3` and `max_depth=10` to compare generalization vs overfitting.  
+* Results showed:
+  - Accuracy remained the same with and without scaling → proving Decision Trees are **scale-invariant**.  
+  - Shallow trees (depth=3) generalized better.  
+  - Deeper trees (depth=10) slightly overfit, reducing accuracy.  
+
+---
+
 ## Key Takeaways from Classification (so far)
 
 * Classification is about predicting **categories** instead of numbers.
@@ -69,6 +112,9 @@ This section begins with the foundation of classification, covers **Logistic Reg
 * K-Nearest Neighbors (KNN) is a simple distance-based algorithm where predictions depend on the majority class of neighbors.
 * The choice of k-value impacts performance (small k → overfitting, large k → underfitting).
 * Feature scaling is critical for KNN: accuracy improved from 0.78 (unscaled) to 0.93 (scaled).
+* **SVM** is powerful in high-dimensional spaces, requires scaling, and benefits from kernel functions.  
+* **Naive Bayes** is fast, works well with independence assumptions, but preprocessing choices matter.  
+* **Decision Trees** are interpretable, do not require scaling, and must be pruned to avoid overfitting.  
 
 ---
 
@@ -76,7 +122,5 @@ This section begins with the foundation of classification, covers **Logistic Reg
 
 Upcoming notebooks in this folder will cover more **classification algorithms** such as:
 
-* Support Vector Machines (SVM)
-* Decision Trees
-* Random Forest
-* Naive Bayes
+* Random Forest  
+* Ensemble methods (Bagging, Boosting, Stacking, Voting)  
