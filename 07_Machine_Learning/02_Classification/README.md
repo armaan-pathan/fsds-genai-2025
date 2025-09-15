@@ -46,6 +46,18 @@ This section begins with the foundation of classification, covers **Logistic Reg
 
 ---
 
+### [Day52 – K-Nearest Neighbors (KNN) Classification](Day52_K-Nearest_Neighbors_%28KNN%29_Classification)
+
+* Introduction to **KNN Classification**, a distance-based supervised learning algorithm.
+* Explained how KNN works step by step: choosing `k`, calculating distances, finding nearest neighbors, and majority voting.
+* Discussed the **importance of feature scaling** for KNN since it relies on distance.
+* Experiments performed with different values of `k` (3, 4, 5) using scaled data → **accuracy = 0.93**.
+* Compared with **no scaling (k=3)** → accuracy dropped to **0.78**, showing why preprocessing is crucial.
+* Confusion matrices analyzed to understand misclassifications.
+* Key learning: KNN is simple, effective, but highly dependent on **k-value choice** and **scaling**.
+
+---
+
 ## Key Takeaways from Classification (so far)
 
 * Classification is about predicting **categories** instead of numbers.
@@ -54,6 +66,9 @@ This section begins with the foundation of classification, covers **Logistic Reg
 * Confusion matrix & metrics (Precision, Recall, F1-score) give deeper insights than accuracy alone.
 * Models must generalize well → tested with **unseen data**.
 * Deployment with **Streamlit** shows how end-users can interact with ML models.
+* K-Nearest Neighbors (KNN) is a simple distance-based algorithm where predictions depend on the majority class of neighbors.
+* The choice of k-value impacts performance (small k → overfitting, large k → underfitting).
+* Feature scaling is critical for KNN: accuracy improved from 0.78 (unscaled) to 0.93 (scaled).
 
 ---
 
@@ -61,7 +76,6 @@ This section begins with the foundation of classification, covers **Logistic Reg
 
 Upcoming notebooks in this folder will cover more **classification algorithms** such as:
 
-* K-Nearest Neighbors (KNN)
 * Support Vector Machines (SVM)
 * Decision Trees
 * Random Forest
