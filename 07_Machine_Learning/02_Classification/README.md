@@ -3,9 +3,10 @@
 ## Overview
 
 The **Classification** folder contains all notebooks and projects related to **classification algorithms in Machine Learning**.
+
 Unlike regression (which predicts continuous values), classification is about predicting **categories or classes** (e.g., Yes/No, Spam/Not Spam, Purchase/Not Purchase).
 
-This section begins with the foundation of classification, covers **Logistic Regression**, extends it to unseen data, and demonstrates **deployment using Streamlit**.
+This section begins with the foundation of classification, covers **Logistic Regression**, extends it to unseen data, demonstrates **deployment using Streamlit**, and further explores advanced algorithms and evaluation methods.
 
 ---
 
@@ -101,26 +102,53 @@ This section begins with the foundation of classification, covers **Logistic Reg
 
 ---
 
-## Key Takeaways from Classification (so far)
+### [Day56 – Ensemble Learning](Day56_Ensemble_Learning)
+
+* Studied **Ensemble Learning**, which combines multiple weak learners to form a stronger model.
+* Explained the difference between **weak learners** and **strong learners**.
+* Covered major ensemble methods:
+
+  * **Bagging** → Random Forest Classifier
+  * **Boosting** → AdaBoost, XGBoost, LightGBM
+  * **Voting & Stacking** classifiers
+* Implemented and compared these ensemble models on the dataset.
+* Created a **bar chart comparison** of accuracies across models:
+
+  * Random Forest = 0.92
+  * AdaBoost = 0.94
+  * XGBoost = 0.90
+  * LightGBM = 0.89
+  * Voting Classifier = 0.89
+  * Stacking Classifier = 0.91
+* Observed that **AdaBoost performed best**, but all ensemble methods improved model robustness compared to individual classifiers.
+
+---
+
+### [Day57 – Cross-Validation & ROC/AUC](Day57_Cross_Validation_and_ROC_AUC)
+
+* Focused on **advanced evaluation techniques** for classification.
+* Learned about **Cross-Validation** and why it provides more reliable performance estimates than a single train/test split.
+* Implemented **Stratified k-Fold Cross-Validation** and evaluated both accuracy and ROC-AUC scores across folds.
+* Studied **ROC (Receiver Operating Characteristic) curves** to visualize trade-offs between True Positive Rate and False Positive Rate.
+* Calculated the **AUC (Area Under Curve)** as a single numeric performance measure.
+* Results showed **high accuracy with AUC > 0.90**, confirming excellent class separation ability.
+
+---
+## Key Takeaways from Classification
 
 * Classification is about predicting **categories** instead of numbers.
 * Logistic Regression, despite its name, is a **classification algorithm**.
-* Preprocessing (scaling/normalization) impacts accuracy.
+* Preprocessing (scaling/normalization) impacts accuracy for certain models.
 * Confusion matrix & metrics (Precision, Recall, F1-score) give deeper insights than accuracy alone.
 * Models must generalize well → tested with **unseen data**.
 * Deployment with **Streamlit** shows how end-users can interact with ML models.
 * K-Nearest Neighbors (KNN) is a simple distance-based algorithm where predictions depend on the majority class of neighbors.
 * The choice of k-value impacts performance (small k → overfitting, large k → underfitting).
 * Feature scaling is critical for KNN: accuracy improved from 0.78 (unscaled) to 0.93 (scaled).
-* **SVM** is powerful in high-dimensional spaces, requires scaling, and benefits from kernel functions.  
-* **Naive Bayes** is fast, works well with independence assumptions, but preprocessing choices matter.  
-* **Decision Trees** are interpretable, do not require scaling, and must be pruned to avoid overfitting.  
+* **SVM** is powerful in high-dimensional spaces, requires scaling, and benefits from kernel functions.
+* **Naive Bayes** is fast, works well with independence assumptions, but preprocessing choices matter.
+* **Decision Trees** are interpretable, do not require scaling, and must be pruned to avoid overfitting.
+* **Ensemble Learning** (Bagging, Boosting, Voting, Stacking) combines multiple learners for stronger performance, often preventing overfitting.
+* **Cross-Validation & ROC/AUC** provide more reliable and deeper evaluation of model performance compared to accuracy alone.
 
 ---
-
-## Next Steps
-
-Upcoming notebooks in this folder will cover more **classification algorithms** such as:
-
-* Random Forest  
-* Ensemble methods (Bagging, Boosting, Stacking, Voting)  
