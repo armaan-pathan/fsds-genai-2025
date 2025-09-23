@@ -51,7 +51,7 @@ This project demonstrates the complete workflow of:
    ```bash
    git clone https://github.com/yourusername/student-mark-predictor.git
    cd student-mark-predictor
-  ````
+   ````
 
 2. **Install dependencies**
 
