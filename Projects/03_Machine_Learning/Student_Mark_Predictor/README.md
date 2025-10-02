@@ -49,7 +49,7 @@ This project demonstrates the complete workflow of:
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/yourusername/student-mark-predictor.git
+   git clone https://github.com/armaan-pathan/fsds-genai-2025.git
    cd student-mark-predictor
    ````
 
