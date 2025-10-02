@@ -18,7 +18,7 @@ The model leverages historical market data of **USDT** and **BNB** (closing pric
 
 ### 1️. Clone the Repository
 ```bash
-git clone https://github.com/your-username/crypto-price-prediction.git
+git clone https://github.com/armaan-pathan/fsds-genai-2025.git
 cd crypto-price-prediction
 ````
 
@@ -93,3 +93,21 @@ The app will output the **Predicted BTC Closing Price**.
 * [Scikit-learn](https://scikit-learn.org/) for ML models
 
 ---
+
+## Project Structure
+
+```
+
+crypto-price-prediction/
+│
+├── screenshots/                   # App screenshots (for README)
+│
+├── README.md                      # Project documentation
+├── app.py                         # Streamlit app script
+├── bitcoin_price_prediction.ipynb # Jupyter Notebook with model training
+├── best_model.pkl                 # Saved trained Random Forest model
+├── scaler.pkl                     # Saved data scaler for preprocessing
+├── requirements.txt               # Python dependencies
+
+```
+
