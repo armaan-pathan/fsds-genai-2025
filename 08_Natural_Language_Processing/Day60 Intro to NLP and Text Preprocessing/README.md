@@ -67,6 +67,3 @@ In the upcoming days, I’ll move deeper into NLP by learning:
 * Introduction to RNNs and LLMs
 
 ---
-
-Would you like me to also include a **“UI Preview / Output”** section (like your Flask project READMEs) showing screenshots of tokenization or outputs for GitHub visuals?
-```
