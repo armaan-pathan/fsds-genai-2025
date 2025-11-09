@@ -107,7 +107,6 @@ multiple-language-translation/
 ├── app.py                               # Streamlit app script
 ├── language.csv                         # Language names and ISO codes
 ├── requirements.txt                     # Python dependencies
-├── translator_demo.ipynb                # Optional notebook for testing
 ```
 
 ---
