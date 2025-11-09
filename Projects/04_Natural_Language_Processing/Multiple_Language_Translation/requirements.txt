@@ -1,0 +1,13 @@
+# Core dependencies
+streamlit==1.39.0
+pandas==2.2.3
+numpy==1.26.4
+
+# Translation and Text-to-Speech
+mtranslate==1.8
+gTTS==2.5.3
+
+# Optional utilities
+requests==2.32.3
+base58==2.1.1
+
