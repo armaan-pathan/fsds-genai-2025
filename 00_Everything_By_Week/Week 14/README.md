@@ -94,7 +94,7 @@ The project served as a practical checkpoint before transitioning to NLP.
 
 ---
 
-### **[Day 60 – Introduction to NLP](Day60 Intro to NLP and Text Preprocessing)**
+### **Day 60 – Introduction to NLP**
 
 After completing the ML module, I officially entered the **AI/NLP** domain.
 
