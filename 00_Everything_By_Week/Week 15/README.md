@@ -217,22 +217,22 @@ A fully automated, reproducible ML training workflow — essential for enterpris
 
 ### **NLP Advancement**
 
-✔ Learned chunking, summarization, and production-grade spaCy workflows
-✔ Implemented ML algorithms for text classification
-✔ Built a multi-language translation app
+- Learned chunking, summarization, and production-grade spaCy workflows
+- Implemented ML algorithms for text classification
+- Built a multi-language translation app
 
 ### **Data Engineering**
 
-✔ Extracted structured text from XML
-✔ Cleaned and prepared real-world document data
+- Extracted structured text from XML
+- Cleaned and prepared real-world document data
 
 ### **MLOps & Automation**
 
-✔ Understood ML lifecycle and experiment tracking
-✔ Logged runs, metrics, parameters, and artifacts using MLflow
-✔ Managed model versions and registry workflows
-✔ Built end-to-end pipelines for automated training
-✔ Implemented CI/CD using GitHub Actions
+- Understood ML lifecycle and experiment tracking
+- Logged runs, metrics, parameters, and artifacts using MLflow
+- Managed model versions and registry workflows
+- Built end-to-end pipelines for automated training
+- Implemented CI/CD using GitHub Actions
 
 ### **Overall**
 
