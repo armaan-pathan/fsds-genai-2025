@@ -27,7 +27,7 @@ Below is a summary of the topics covered in this folder:
 
 ---
 
-### **Day 61 – Advanced Text Preprocessing**
+### **[Day 61 – Advanced Text Preprocessing](Day61_Advanced_Text_Preprocessing_in_NLP)**
 
 * Stopword removal
 * POS tagging
