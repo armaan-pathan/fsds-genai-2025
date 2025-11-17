@@ -20,17 +20,17 @@ Each folder contains detailed notebooks, theory explanations, projects, model ev
 ```
 07_machine_learning/
 │
-├── 00_basics/
-├── 01_regression/
-├── 02_classification/
-└── 03_clustering/
+├── 00_Basics/
+├── 01_Regression/
+├── 02_Classification/
+└── 03_Clustering/
 ```
 
 ---
 
 ## **Overview of Subfolders**
 
-### **[00_basics – Foundations of Machine Learning](00_Basics)**
+### **[00_Basics – Foundations of Machine Learning](00_Basics)**
 
 This section introduces the core concepts necessary for ML modeling:
 
@@ -46,7 +46,7 @@ This folder sets the stage for all ML algorithms that follow.
 
 ---
 
-### **[01_regression – Predicting Continuous Outcomes](01_Regression)**
+### **[01_Regression – Predicting Continuous Outcomes](01_Regression)**
 
 This section covers the progression from simple to advanced regression techniques:
 
@@ -62,7 +62,7 @@ Focus was on model interpretability, coefficients, performance metrics (MSE, R²
 
 ---
 
-### **[02_classification – Predicting Categories](02_Classification)**
+### **[02_Classification – Predicting Categories](02_Classification)**
 
 This is the largest section, covering classical classification techniques:
 
@@ -84,7 +84,7 @@ This section builds strong skills in model experimentation, performance comparis
 
 ---
 
-### **[03_clustering – Unsupervised Learning](03_Clustering)**
+### **[03_Clustering – Unsupervised Learning](03_Clustering)**
 
 This section explores patterns in unlabeled data:
 
@@ -116,7 +116,7 @@ These statistical foundations support ML concepts like model evaluation, bias-va
 
 After completing Machine Learning, I will be moving into:
 
-### **08 – Natural Language Processing (NLP)**
+### **Natural Language Processing (NLP)**
 
 * Text preprocessing
 * Word embeddings
@@ -150,7 +150,7 @@ ML is the bridge that connects classical data science to these advanced AI topic
 
 ## **Summary**
 
-The **07_machine_learning** folder represents a complete, structured journey through Machine Learning — from preprocessing and regression to classification, ensembles, and clustering.
+The **machine learning** folder represents a complete, structured journey through Machine Learning — from preprocessing and regression to classification, ensembles, and clustering.
 
 This section solidifies the practical and theoretical foundation necessary for all upcoming advanced AI learning, ensuring strong understanding before stepping into NLP, Deep Learning, and modern generative AI systems.
 
