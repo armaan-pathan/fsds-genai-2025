@@ -37,7 +37,7 @@ Below is a summary of the topics covered in this folder:
 
 ---
 
-### **Day 62 – Word Embedding Techniques**
+### **[Day 62 – Word Embedding Techniques](Day62_Word_Embedding_Techniques_in_NLP)**
 
 * Why text must be converted to numerical vectors
 * Vectorization methods:
@@ -50,7 +50,7 @@ Below is a summary of the topics covered in this folder:
 
 ---
 
-### **Day 63 – Chunking in NLP & LLMs**
+### **[Day 63 – Chunking in NLP & LLMs](Day63_Chunking_in_NLP_&_LLMs)**
 
 * Understanding chunking in traditional NLP (syntactic chunks)
 * Chunking for LLMs (splitting long text for context-window limits)
@@ -61,7 +61,7 @@ Below is a summary of the topics covered in this folder:
 
 ---
 
-### **Day 64 – Machine Learning Models in NLP**
+### **[Day 64 – Machine Learning Models in NLP](Day64_NLP_ML_Implementation)**
 
 * End-to-end sentiment analysis on Restaurant Reviews
 * Full NLP + ML pipeline:
@@ -75,7 +75,7 @@ Below is a summary of the topics covered in this folder:
 
 ---
 
-### **Day 65a – Introduction to spaCy**
+### **[Day 65a – Introduction to spaCy](Day65a_NLP_Spacy_Intro)**
 
 * spaCy NLP workflow
 * Tokenization
@@ -88,7 +88,7 @@ Below is a summary of the topics covered in this folder:
 
 ---
 
-### **Day 65b – Text Summarization using spaCy**
+### **[Day 65b – Text Summarization using spaCy](Day65b_Spacy_Text_Summarization)**
 
 * Extractive summarization
 * Word-frequency scoring
@@ -98,7 +98,7 @@ Below is a summary of the topics covered in this folder:
 
 ---
 
-### **Day 66 – XML Scraping & Cleaning**
+### **[Day 66 – XML Scraping & Cleaning](Day66_XML_Scrapping)**
 
 * Extracting text from XML files
 * Parsing XML using `ElementTree`
