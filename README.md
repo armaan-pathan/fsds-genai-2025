@@ -24,7 +24,7 @@ Each module includes practical implementations, supporting resources, and a dedi
 09_MLOps_and_CICD_Pipeline
 Projects
 pdf_resources
-
+README.md
 ```
 
 ---
@@ -123,8 +123,6 @@ This repository serves as:
 - A reference for full stack data science concepts
 - A collection of practical implementations and experiments
 - Supporting material for academic, interview, and project-based use
-```
+
 
 ---
-
-
