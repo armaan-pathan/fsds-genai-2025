@@ -94,3 +94,31 @@ This system demonstrates how predictive modeling can support real-world financia
 * **Model Storage:** Pickle
 
 ---
+
+## Project Structure
+
+```
+loan-approval-prediction/
+│
+├── notebooks/
+│   └── loan_prediction_project.ipynb
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   └── styles.css
+│
+├── screenshots/
+│   ├── home.png
+│   ├── approved_result.gif
+│   └── rejected_result.gif
+│
+├── ab_best_model.pkl
+├── app.py
+├── Loan_Data.csv
+└── requirements.txt
+```
+
+---
+
