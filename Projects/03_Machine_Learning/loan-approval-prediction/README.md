@@ -137,3 +137,62 @@ loan-approval-prediction/
 ![Rejected](screenshots/rejected_result.gif)
 
 ---
+
+
+## How to Run the Project Locally
+
+### Clone the repository
+
+```bash
+git clone https://github.com/armaan-pathan/loan-approval-prediction.git
+cd loan-approval-prediction
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run Flask application
+
+```bash
+python app.py
+```
+
+### Open in browser
+
+```
+http://127.0.0.1:5000/
+```
+
+---
+
+## Input Features
+
+| Feature          | Description               |
+| ---------------- | ------------------------- |
+| Credit History   | Good (1) / Bad (0)        |
+| Property Area    | Rural / Urban / Semiurban |
+| Applicant Income | Applicant’s income amount |
+
+---
+
+## Output
+
+* **Loan Approved**
+* **Loan Rejected**
+
+The prediction result is displayed instantly on the UI.
+
+---
+
+## Future Enhancements
+
+* Add more applicant features (loan amount, dependents, employment)
+* Improve model performance with feature engineering
+* Show approval probability score
+* Deploy on cloud platforms (AWS / Render / Railway)
+* Add user authentication and logging
+
+---
