@@ -122,3 +122,18 @@ loan-approval-prediction/
 
 ---
 
+## Web Application Preview
+
+### Home Page
+
+![Home](screenshots/home.png)
+
+### Loan Approved
+
+![Approved](screenshots/approved_result.gif)
+
+### Loan Rejected
+
+![Rejected](screenshots/rejected_result.gif)
+
+---
